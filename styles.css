@@ -28,26 +28,6 @@ img {
   margin: 1%;
   font-family: 'Courier New', Courier, monospace;
 }
-.pic1 {
-  display: flex;
-  margin: 30px;
-}
-
-.pic2 {
-  display: flex;
-  margin: 30px;
-}
-
-.pic3 {
-  display: flex;
-  margin: 30px;
-}
-.crown {
-  position: absolute;
-  left: 152px;
-  top: 47px;
-  width: 100px;
-}
 
 .opr {
   background-color: goldenrod;
@@ -57,57 +37,62 @@ img {
 .but1 {
   display: flex;
 }
-.kot1 {
+.img-with-wow {
   position: relative;
   margin: 10px;
 }
-.k1 {
-  width: 500px;
+
+.img-group {
+  display: flex;
+  margin: 30px;
 }
-.kot2 {
-  position: relative;
-  margin: 10px;
-}
-.k2 {
-  width: 500px;
-  height: 587px;
-}
+
+/* Absolute images  */
+
 .wow1 {
   position: absolute;
   top: calc(50% - 82px);
   left: calc(50% - 150px);
   width: 300px;
 }
-.pes1 {
-  position: relative;
-  margin: 10px;
+
+.crown {
+  position: absolute;
+  left: 152px;
+  top: 47px;
+  width: 100px;
+}
+
+/* Images with animals */
+
+.k1 {
+  width: 500px;
+}
+
+.k2 {
+  width: 500px;
+  height: 587px;
 }
 .p1 {
   width: 500px;
   height: 501px;
 }
-.pes2 {
-  position: relative;
-  margin: 10px;
-}
+
 .p2 {
   width: 500px;
 }
-.svin1 {
-  position: relative;
-  margin: 10px;
-}
+
 .s1 {
   width: 500px;
   height: 334px;
 }
-.svin2 {
-  position: relative;
-  margin: 10px;
-}
+
 .s2 {
   width: 500px;
 }
+
+/* Other images */
+
 .otkr {
   width: 300px;
   margin: 30px;
