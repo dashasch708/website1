@@ -35,7 +35,7 @@
       <div class="img-with-wow">
         <img class="k1" src="kot1.jpg" />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -50,7 +50,7 @@
           src="https://pngimg.com/uploads/crown/crown_PNG4.png"
         />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -63,7 +63,7 @@
           src="https://bipbap.ru/wp-content/uploads/2017/10/00115b52c3100b01ac0a0b.jpg"
         />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -74,7 +74,7 @@
           src="https://oir.mobi/uploads/posts/2021-04/1619543955_44-oir_mobi-p-milie-pesiki-zhivotnie-krasivo-foto-50.png"
         />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -87,7 +87,7 @@
           src="https://www.hunt-dogs.ru/wp-content/uploads/2019/06/morskie-svinki-uhod.jpg"
         />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -98,7 +98,7 @@
           src="https://hvost.news/upload/resize_cache/iblock/50d/750_400_1/50dd38e468a5f7b65a5df5eeb8361603.JPG"
         />
         <img
-          class="wow1"
+          class="wowTransparent"
           src="https://www.pngmart.com/files/12/Comic-WOW-Transparent-PNG.png"
         />
       </div>
@@ -130,12 +130,17 @@
       />
     </div>
     <script>
-        const w = document.getElementsByClassName("wow1")
+        const w = document.getElementsByClassName("wowTransparent")
         console.log(w)
         const arr = [...w]
         for (let wow of arr) {
+          wow.onmouseover = peekWow
+          wow.onmouseout = hideWow
           wow.onclick = showWow
 
+          function peekWow() {
+            wow.style.opacity = 0.5
+          }
           function showWow() {
             wow.style.opacity = 1
             setTimeout(hideWow, 1000)
