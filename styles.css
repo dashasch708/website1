@@ -50,7 +50,9 @@ h1 {
   top: calc(50% - 82px);
   left: calc(50% - 150px);
   width: 300px;
+  opacity: 0;
 }
+.wow1:hover {opacity: .5;}
 
 .crown {
   position: absolute;

@@ -129,5 +129,21 @@
         src="https://vjoy.cc/wp-content/uploads/2021/09/881519827.gif"
       />
     </div>
+    <script>
+        const w = document.getElementsByClassName("wow1")
+        console.log(w)
+        const arr = [...w]
+        for (let wow of arr) {
+          wow.onclick = showWow
+
+          function showWow() {
+            wow.style.opacity = 1
+            setTimeout(hideWow, 1000)
+          }
+          function hideWow() {
+            wow.style.opacity = 0
+          }
+        }
+    </script>
   </body>
 </html>
