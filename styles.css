@@ -1,77 +1,95 @@
 body {
-    background-color: antiquewhite;
-    background: linear-gradient(green, brown);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: stretch;
+  background-color: antiquewhite;
+  background: linear-gradient(green, brown);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
 }
 
 h1 {
-    margin: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
-    text-align: center;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  text-align: center;
 }
 
-img {
-    max-width: 1000px;
-}
 .desc {
-    background-color: beige;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 15px;
-    text-align: center;
+  background-color: beige;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  text-align: center;
 }
 
-.pic1 {
-    display: flex;
-    margin: 30px;
-    position: relative;
-}
-
-.pic2 {
-    display: flex;
-    margin: 30px;
-}
-
-.pic3 {
-    display: flex;
-    margin: 30px;
-}
-.crown {
-    position: absolute;
-    left: 152px;
-    top: 47px;
+.sel {
+  margin: 1%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .opr {
-    background-color: goldenrod;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5%;
+  background-color: goldenrod;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5%;
 }
-.but1{
-    display: flex;
+
+.img-with-wow {
+  position: relative;
+  margin: 10px;
 }
-.kot1{
-    position: relative;
+
+.img-group {
+  display: flex;
+  margin: 30px;
 }
-.kot2{
-    position: relative;
+
+/* Absolute images  */
+
+.wow1 {
+  position: absolute;
+  top: calc(50% - 82px);
+  left: calc(50% - 150px);
+  width: 300px;
 }
-.k2{
-    width: 500px;
-    height: 587px;
+
+.crown {
+  position: absolute;
+  left: 152px;
+  top: 47px;
+  width: 100px;
 }
-.wow1{
-    position:absolute;
-    top: calc(50% - 82px);
-    left: calc(50% - 150px);
+
+/* Images with animals */
+
+.k1 {
+  width: 500px;
 }
-.pes1 {
-    position: relative;
+
+.k2 {
+  width: 500px;
+  height: 587px;
 }
-.pes2{
-    position: relative;
+.p1 {
+  width: 500px;
+  height: 501px;
+}
+
+.p2 {
+  width: 500px;
+}
+
+.s1 {
+  width: 500px;
+  height: 334px;
+}
+
+.s2 {
+  width: 500px;
+}
+
+/* Other images */
+
+.otkr {
+  width: 300px;
+  margin: 30px;
 }
