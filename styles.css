@@ -47,9 +47,8 @@ h1 {
 
 .wowTransparent {
   position: absolute;
-  top: calc(50% - 82px);
-  left: calc(50% - 150px);
-  width: 300px;
+  top: 0px;
+  left: 0px;
   opacity: 0;
 }
 
