@@ -13,8 +13,6 @@
     </style>
 
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <title>Самая лучшая страничка</title>
   </head>
@@ -35,19 +33,11 @@
       настроения
     </div>
 
-    <p><nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Кисики</li>
-    <li class="breadcrumb-item"><a href="#">Пёсики</a></li>
-    <li class="breadcrumb-item"><a href="#">Морские свиночки</a></li>
-  </ol>
-</nav></p>
-
-    <!-- <select class="sel">
+    <select class="sel">
       <option>Перейти к кисикам</option>
       <option>Перейти к пёсикам</option>
       <option>Перейти к морским свиночкам</option>
-    </select> -->
+    </select>
 
     <div class="img-group">
       <div class="img-with-wow">
@@ -105,29 +95,37 @@
     </div>
 
     <div class="opr">
-      <!-- <form id="opros" action="https://ya.ru" method="get"> -->
-      <form id="opros">
-        <p>Введите ваше имя: <input type="text" id="name" /></p>
+      <form
+        id="opros"
+        action="http://localhost:3000/test"
+        target="_blank"
+        method="get"
+      >
+        <!-- <form id="opros"> -->
+        <p>Введите ваше имя: <input type="text" id="name" name="name" /></p>
         <p>
           Введите ваш возраст:
-          <input type="number" max="120" min="0" id="age" />
+          <input type="number" max="120" min="0" id="age" name="age" />
         </p>
         <p>
           Введите вашу оценку нашему сайту (0-10):
-          <input type="number" max="10" min="0" id="mark" />
+          <input type="number" max="10" min="0" id="mark" name="mark" />
         </p>
         <p>
           Введите вашу почту для подписки на новости (обязательно):
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" />
         </p>
-        <p>Да?<input type="checkbox" id="yes" /></p>
-        <button type="submit" class="btn btn-info">Ok</button>
+        <p>Да?<input type="checkbox" id="yes" name="yes" /></p>
+        <button type="submit">ОК</button>
       </form>
     </div>
 
     <div class="end">
-      Автор данного социально значимого проекта:
-      <a href="http://vk.com/dasha___sch">Дарья Щ</a>
+      <div class="donate">
+        Автор данного социально значимого проекта:
+        <a target="_blank" href="http://vk.com/dasha___sch">Дарья Щ</a>
+        <p>Для доната: 2202 2014 7284 0657</p>
+      </div>
       <img
         class="otkr"
         src="https://vjoy.cc/wp-content/uploads/2021/09/881519827.gif"
@@ -160,6 +158,6 @@
         }
       }
     </script>
-    <script src="formData.js"></script>
+    <!-- <script src="formData.js"></script> -->
   </body>
 </html>
