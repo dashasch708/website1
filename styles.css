@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: antiquewhite; 
   background: linear-gradient(green, brown);
   display: flex;
   flex-direction: column;
@@ -9,28 +9,29 @@ body {
 }
 
 h1 {
-  margin: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-  text-align: center;
+  margin: 5px !important;
+  font-size: xx-large !important;
+  text-align: center !important;
 }
 
 .desc {
   background-color: beige;
-  font-family: 'Courier New', Courier, monospace;
-  margin-top: 15px;
-  text-align: center;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: large !important;
+  margin: 15px !important;
+  text-align: center !important;
 }
 
-.sel {
+/* .sel {
   margin: 1%;
   font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 .opr {
   background-color: goldenrod;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 5%;
+  font-family: 'Courier New', Courier, monospace !important;
+  padding: 5% !important;
+  margin: 16px !important;
 }
 
 .img-with-wow {
@@ -40,7 +41,7 @@ h1 {
 
 .img-group {
   display: flex;
-  margin: 30px;
+  margin: 10px 30px;
 }
 
 /* Absolute images  */
@@ -92,4 +93,30 @@ h1 {
 .otkr {
   width: 300px;
   margin: 30px;
+}
+
+#nameU {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: small;
+  margin-top: 10px !important;
+}
+
+#nameUser {
+  font-size: small;
+}
+
+.linkMenu {
+  color: #551a8b !important;
+  text-decoration-color: #551a8b !important;
+}
+
+#scrollUp {
+  position: fixed;
+  bottom:150px;
+  right: 40px;
+  z-index: 9999;
+  font-size: 70px;
+  width: 32px;
+  height: 32px;
 }
