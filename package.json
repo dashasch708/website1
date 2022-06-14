@@ -1,0 +1,27 @@
+{
+  "name": "website1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashasch708/website1.git"
+  },
+  "author": "dashaSch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashasch708/website1/issues"
+  },
+  "homepage": "https://github.com/dashasch708/website1#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
